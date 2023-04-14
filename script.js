@@ -7,7 +7,8 @@ var observer = new MutationObserver(function (mutations) {
     for (var i = 0; i < strongElements.length; i++) {
       var element = strongElements[i];
       if (element.classList.contains("f_Strong")) {
-        const yuanPrice = element.innerHTML
+        if(element.innerHTML.includes("¥")) {
+            const yuanPrice = element.innerHTML
           ?.trim()
           ?.split(" ")[1]
           ?.replace(/[^\d.]/g, "");
@@ -15,6 +16,7 @@ var observer = new MutationObserver(function (mutations) {
         const usdPrice = (yuanPrice * yuan_usd).toFixed(2);
 
         element.innerHTML = `${usdPrice}$`;
+        }
       }
     }
   });
