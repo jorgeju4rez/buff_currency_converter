@@ -1,5 +1,6 @@
 # Buff Currency Converter
 This extension translate prices (yuanes) to (usd)
+Made with 💖 by jorgeju4rez
 
 ## Features
 
