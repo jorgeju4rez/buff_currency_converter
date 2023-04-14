@@ -1,0 +1,21 @@
+.card {
+    min-width: 150px;
+}
+
+.card__title {
+    text-align: center;
+}
+
+.card__title-select {
+    margin: auto;
+    padding: auto;
+}
+
+.card__select {
+    margin: auto auto;
+    border: 1px solid #d9d9d9;
+    height: 30px;
+    overflow: hidden;
+    width: 230px;
+    position: relative;
+}
