@@ -1,18 +1,25 @@
-setTimeout(() => {
+var targetNode = document.body;
+let yuan_usd = 0.15;
 
-    let yuan_usd = 0.15
-    let yuan_eur = 0.13
-
-    const yuanPriceElements = document.querySelectorAll('.f_Strong');
-
-    yuanPriceElements.forEach(element => {
-        const yuanPrice = element.innerHTML.trim().split(' ')[1].replace(/\D/g, "");;
+var observer = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    var strongElements = mutation.target.getElementsByTagName("strong");
+    for (var i = 0; i < strongElements.length; i++) {
+      var element = strongElements[i];
+      if (element.classList.contains("f_Strong")) {
+        const yuanPrice = element.innerHTML
+          ?.trim()
+          ?.split(" ")[1]
+          ?.replace(/[^\d.]/g, "");
 
         const usdPrice = (yuanPrice * yuan_usd).toFixed(2);
-        const eurPrice = (yuanPrice * yuan_eur).toFixed(2);
 
+        element.innerHTML = `${usdPrice}$`;
+      }
+    }
+  });
+});
 
-        element.innerHTML = `${usdPrice}$ / ${eurPrice}€`;
-    })
-}, 1000);
+var config = { attributes: true, childList: true, subtree: true };
 
+observer.observe(targetNode, config);
