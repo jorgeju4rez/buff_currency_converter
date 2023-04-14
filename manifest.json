@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "author": "jorgeju4rez",
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "html/popup.html",
     "default_title": "Buff Currency Converter"
   },
   "content_scripts": [
@@ -14,10 +14,10 @@
         "https://buff.163.com/*"
       ],
       "css": [
-        "fix.css"
+        "styles/style.css"
       ],
       "js": [
-        "script.js"
+        "js/script.js"
       ]
     }
   ]
