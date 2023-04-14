@@ -15,4 +15,4 @@ Made with 💖 by jorgeju4rez
 
 ## Example
 
-![Example](https://user-images.githubusercontent.com/76629925/231979367-c39d541d-e2e2-415b-88dc-b6f798a09c96.png)
+![image](https://user-images.githubusercontent.com/76629925/232057790-5eb0f444-3f2b-4ad3-b1c8-9c3b26f2419c.png)
