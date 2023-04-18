@@ -9,6 +9,9 @@ Made with 💖 by jorgeju4rez
 - Customizable settings: Users should be able to customize the extension settings according to their preferences, such as the default conversion rate, the number of decimal places to display, and the preferred display format.
 
 
+## Download
+
+[Chrome Web Store](https://chrome.google.com/webstore/detail/buff-currency-converter/chchhndaehiakfjiefghpiiplcndpjlp)
 
 
 
