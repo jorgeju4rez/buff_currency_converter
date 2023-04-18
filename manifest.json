@@ -1,6 +1,6 @@
 {
   "name": "Buff Tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is an extension to convert price (yuanes) to usd / euro",
   "manifest_version": 3,
   "author": "jorgeju4rez",
