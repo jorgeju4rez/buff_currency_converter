@@ -1,5 +1,5 @@
 var targetNode = document.body;
-let yuan_usd = 0.15;
+let yuan_usd = 0.14;
 
 var observer = new MutationObserver(function (mutations) {
   mutations.forEach(function (mutation) {
